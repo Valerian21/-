@@ -18,9 +18,9 @@ namespace Методы__классы
             Console.ReadKey();
             user user = new user() 
             {
-                Name = "Ваелериан",
+                Name = "Валериан",
                 Surname = "Пляскина",
-                Login = "Vlr",
+                Login = "Vlr",              //ВАЖНО! Это логин и пароль (:
                 Password = "qwerty",
 
             };
@@ -59,11 +59,11 @@ namespace Методы__классы
         { 
         if (Login == login || Password==password) //Если пароль и логин совпали, то
             {
-                Console.WriteLine("Вы успешно авторизовались");
+                Console.WriteLine($"{Name} {Surname}, Вы успешно авторизовались");
             }
             else
             {       //Если пароль и логин не совпали, то
-                Console.WriteLine("Авторизация не удалась");
+                Console.WriteLine($"{Name} {Surname}, Авторизация не удалась");
 
             }
         }
